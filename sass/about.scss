@@ -1,0 +1,28 @@
+#about {
+    padding: 45px 0;
+    h2 {
+        text-align: center;
+        color: #000;
+        font-size: 3.6rem;
+        font-family: 'Special Elite', cursive;
+        padding-bottom: 50px;
+        span {
+            border-bottom: 4px solid #000;
+        }
+    }
+    .about-text {
+        padding: 20px;
+        border: 4px solid #000;
+        border-radius: 10px;
+        background-color: #FFF1E6;
+    }
+    .figure {
+        img {
+            border: 4px solid #000;
+        }
+        .figure-caption {
+            font-size: 1.3rem;
+            color: #000;
+        }
+    }
+}

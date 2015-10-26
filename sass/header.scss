@@ -1,0 +1,151 @@
+/*-- FONTS --*/
+
+/*-- VARIABLES --*/
+
+/*-- GENERAL --*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url('../images/background.jpg');
+    padding-top: 70px;
+}
+.navbar-custom {
+    background-color: #221916;
+    border: none;
+    box-shadow: 2px 2px 1px #000;
+    .social {
+        li {
+            margin-left: 10px;
+            a {
+                min-height: 10px;
+                display: block;
+                margin: 0;
+                width: 45px;
+                font-size: 20px;
+                background-color: #221916;
+                color: #E6E6E6;
+                &.fb {
+                    color: #E6E6E6;
+                    transition: background 0.2s ease-in-out;
+                    &:hover {
+                        background-color: #4463B1;
+                        border-radius: 5px;
+                    }
+                }
+                &.twit {
+                    @extend .fb;
+                    &:hover {
+                        background-color: #56ACEE;
+                        border-radius: 5px;
+                    }
+                }
+                &.link {
+                    @extend .fb;
+                    &:hover {
+                        background-color: #007BB6;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-right {
+        margin-right: 45px;
+        li {
+            a {
+                font-family: 'Roboto Slab', serif;
+                color: #E6E6E6;
+                padding: 15px 0;
+                margin-right: 26px;
+                &:hover, &:focus, &:active {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+/*-- HEADER --*/
+header {
+    height: 100%;
+    width: 100%;
+    .carousel, .item, .active, .carousel-inner {
+        height: 100%;
+        width: 100%;
+        .carousel-indicators {
+            li {
+                margin-right: 20px;
+            }
+        }
+        .one {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../images/cafe.jpg');
+            height: 100%;
+            width: 100%;
+            background-position: center center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .tagline {
+                h1 {
+                    font-family: 'Special Elite', cursive;
+                    font-weight: bolder;
+                    font-size: 6rem;
+                }
+                h3 {
+                    span {
+                        font-family: 'Lato', sans-serif;
+                        font-size: 2rem;
+                        color: #8B572A;
+                        text-shadow: 2px 2px 2px #000;
+                    }
+                }
+            }
+
+        }
+        .two {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../images/mingle.jpg');
+            height: 100%;
+            width: 100%;
+            background-position: center center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .mingle {
+                width: 50%;
+                padding: 12px;
+                border: 2px solid #000;
+                background-color: rgb(227, 217, 191);
+                .btn-carousel {
+                    background-color: transparent;
+                    border: 1.5px solid #000;
+                }
+                h2 {
+                    font-size: 3rem;
+                    font-family: 'Special Elite', cursive;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .three {
+            background-size: cover;
+            background-position: center;
+            background-image: url('../images/cafe3.jpeg');
+            height: 100%;
+            width: 100%;
+            background-position: center center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
